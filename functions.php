@@ -24,8 +24,6 @@ function wp386_setup() {
 	/**
 	 * Make theme available for translation
 	 * Translations can be filed in the /languages/ directory
-	 * If you're building a theme based on _s, use a find and replace
-	 * to change 'wp386' to the name of your theme in all the template files
 	 */
 	load_theme_textdomain( 'wp386', get_template_directory() . '/languages' );
 
@@ -69,8 +67,8 @@ add_action( 'after_setup_theme', 'wp386_setup' );
  */
 function wp386_widgets_init() {
 	register_sidebar( array(
-		'name'          => __( 'Sidebar', 'wp386' ),
-		'id'            => 'sidebar-1',
+		'name'          => __( 'Bottom Widget Area', 'wp386' ),
+		'id'            => 'bottom-1',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h1 class="widget-title">',

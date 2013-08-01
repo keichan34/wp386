@@ -11,7 +11,7 @@
 	</div><!-- #main -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
+		<div class="site-info container">
 			<?php do_action( 'wp386_credits' ); ?>
 			<a href="http://wordpress.org/" title="<?php esc_attr_e( 'A Semantic Personal Publishing Platform', 'wp386' ); ?>" rel="generator"><?php printf( __( 'Proudly powered by %s', 'wp386' ), 'WordPress' ); ?></a>
 			<span class="sep"> | </span>

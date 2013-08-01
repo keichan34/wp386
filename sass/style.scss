@@ -224,3 +224,69 @@ object {
 .infinity-end.neverending .site-footer {
   display: block;
 }
+
+/* Global styles */
+
+%border-box {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+// Button mixin usage
+
+.comments-link > a,
+.edit-link > a,
+.form-submit > #submit {
+  @extend .btn;
+
+  // Default margin: 14px / 2 = 7px
+  margin-bottom: 7px;
+
+  // And some spacing.
+  margin-right: 2px;
+  margin-left: 2px;
+}
+
+.entry-header {
+  @extend .page-header;
+}
+
+// Widgets
+
+.widget-area {
+  @extend .row;
+
+  aside.widget {
+    @extend %span;
+    @extend .span2;
+  }
+}
+
+.widget_search {
+  input.search-field {
+    width: 100%;
+    height: 24px;
+    @extend %border-box;
+  }
+}
+
+// Footers
+
+footer {
+
+  &.site-footer {
+    margin-bottom: 15px;
+  }
+
+  &.entry-meta {
+
+    &::before {
+      content: "";
+      display: block;
+
+      @extend hr;
+    }
+  }
+
+}
