@@ -240,12 +240,7 @@ object {
 .form-submit > #submit {
   @extend .btn;
 
-  // Default margin: 14px / 2 = 7px
-  margin-bottom: 7px;
-
-  // And some spacing.
-  margin-right: 2px;
-  margin-left: 2px;
+  margin: 0 2px 2px;
 }
 
 .entry-header {
@@ -289,4 +284,11 @@ footer {
     }
   }
 
+}
+
+// Articles
+
+article.post {
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
 }

@@ -843,7 +843,7 @@ h4 small {
 ul,
 ol {
   padding: 0;
-  margin: 0 0 14px 14px;
+  margin: 0 0 14px 28px;
 }
 
 ul ul,
@@ -858,6 +858,14 @@ li {
   margin-left: 0;
   line-height: 14px;
   list-style: none;
+}
+
+ol > li {
+  list-style-type: decimal;
+}
+
+ul > li {
+  list-style-type: disc;
 }
 
 ul.unstyled,
@@ -4535,6 +4543,7 @@ input[type="submit"].btn.btn-mini {
 .navbar .nav > li {
   float: left;
   padding-left: 0;
+  list-style-type: none;
 }
 
 .navbar .nav > li > a {
