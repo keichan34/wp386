@@ -1,8 +1,8 @@
 <?php
 /**
- * _s functions and definitions
+ * wp386 functions and definitions
  *
- * @package _s
+ * @package wp386
  */
 
 /**
@@ -96,6 +96,9 @@ function wp386_scripts() {
 
 	wp_enqueue_script( 'wp386-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
+	wp_enqueue_script( 'jquery' );
+
+	wp_enqueue_script( 'wp386-bootstrap-dropdown', get_template_directory_uri() . '/js/bootstrap-dropdown.js', array(), '2.3.1', true );
 	wp_enqueue_script( 'wp386-bootstrap-affix', get_template_directory_uri() . '/js/bootstrap-affix.js', array(), '2.3.1', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -132,3 +135,8 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/**
+ * Load Bootstrap compatibility file.
+ */
+require get_template_directory() . '/inc/bootstrap-compatibility.php';

@@ -27,7 +27,8 @@
 			<div class="navbar-inner">
 				<div class="container">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home" class="brand"><?php bloginfo( 'name' ); ?></a>
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => false, 'menu_class' => 'nav' ) ); ?>
+					<?php $walker = new Bootstrap_Nav_Menu_Walker(); ?>
+					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => false, 'menu_class' => 'nav', 'walker' => $walker, 'fallback_cb' => '', 'depth' => 2 ) ); ?>
 				</div>
 			</div>
 		</div>

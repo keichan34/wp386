@@ -288,6 +288,33 @@ object {
   width: 224px;
 }
 
+// Menus
+
+.nav {
+
+  li {
+    // background: black;
+  }
+
+  .dropdown {
+    > a {
+
+      display: inline-block;
+
+      &.dropdown-toggle {
+        display: inline;
+        margin-left: -8px;
+
+        &:hover,
+        &:focus {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+
+}
+
 // Footers
 
 footer {
