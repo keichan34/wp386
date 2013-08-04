@@ -23,11 +23,13 @@ Use it to make something cool, have fun, and share what you've learned with othe
   display: inline;
   float: left;
   margin-right: 1.5em;
+  margin-bottom: 0.5em;
 }
 .alignright {
   display: inline;
   float: right;
   margin-left: 1.5em;
+  margin-bottom: 0.5em;
 }
 .aligncenter {
   clear: both;
@@ -153,8 +155,14 @@ Use it to make something cool, have fun, and share what you've learned with othe
   height: auto;
   max-width: 90%;
 }
-.site-content .gallery dd {
-  margin: 0;
+.site-content .gallery {
+  dt {
+    margin-bottom: 0.5em;
+  }
+
+  dd {
+    margin: 0;
+  }
 }
 .site-content .gallery-columns-4 .gallery-item {
 }
@@ -226,6 +234,10 @@ object {
   display: block;
 }
 
+.video-player {
+  margin-bottom: 0.5em;
+}
+
 /* Global styles */
 
 %border-box {
@@ -292,4 +304,12 @@ footer {
 article.post {
   -ms-word-wrap: break-word;
   word-wrap: break-word;
+
+  &.sticky {
+
+    .page-header {
+      background-color: #0A0;
+    }
+
+  }
 }
