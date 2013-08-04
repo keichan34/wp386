@@ -322,6 +322,21 @@ object {
 
 }
 
+// Headers
+
+.site-header {
+  // The height of the navbar
+  margin-bottom: 14px;
+}
+
+body.admin-bar .navbar-fixed-top {
+  top: 28px;
+}
+
+body.admin-bar.mp6 .navbar-fixed-top {
+  top: 32px;
+}
+
 // Footers
 
 footer {
