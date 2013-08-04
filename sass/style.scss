@@ -17,6 +17,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 */
 
 @import './bootstrap';
+@import './bootstrap_additions';
 
 /* Alignment */
 .alignleft {
@@ -284,8 +285,14 @@ object {
 .sidebar-container {
   margin-top: 14px;
 
-  // span3
-  width: 224px;
+  // span3 - 16*2 = 224 - 16 * 2 = 224 - 32 = 192px
+  width: 192px;
+
+  max-height: 83%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+  @extend %shadowed-box;
 }
 
 // Menus

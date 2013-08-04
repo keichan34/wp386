@@ -1,0 +1,12 @@
+// Bootstrap additions
+
+%shadowed-box {
+  padding: 14px 16px;
+  margin-bottom: 0;
+  -webkit-box-shadow: 8px 7px 0 0 #000;
+  -moz-box-shadow: 8px 7px 0 0 #000;
+  box-shadow: 8px 7px 0 0 #000;
+
+  background: #555;
+  color: #fff;
+}
