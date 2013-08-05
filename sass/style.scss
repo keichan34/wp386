@@ -282,17 +282,30 @@ object {
 
 // Sidebar
 
+.sidebar-affix {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+}
+
+.sidebar-outer {
+  margin-top: 60px;
+  position: absolute;
+  top: 0;
+  bottom: 30px;
+}
+
 .sidebar-container {
-  margin-top: 14px;
+  max-height: 100%;
 
-  // span3 - 16*2 = 224 - 16 * 2 = 224 - 32 = 192px
-  width: 192px;
+  // span3
+  width: 224px;
 
-  max-height: 83%;
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
 
   @extend %shadowed-box;
+  @extend %border-box;
 }
 
 // Menus
@@ -350,7 +363,7 @@ body.admin-bar.mp6 .navbar-fixed-top {
 footer {
 
   &.site-footer {
-    margin-bottom: 15px;
+    margin-bottom: 5px;
   }
 
   &.entry-meta {

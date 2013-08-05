@@ -39,10 +39,14 @@
 
 		<div class="row">
 			<div class="span3">
-				<div class="affix-top sidebar-container" data-spy="affix">
-					<?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
+				<div class="sidebar-affix">
+					<div class="sidebar-outer">
+						<div class="sidebar-container">
+							<?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
 
-					<?php endif; ?>
+							<?php endif; ?>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="span9">
