@@ -222,16 +222,19 @@ textarea {
 }
 
 @font-face {
-  font-family: 'DOS';
-  src: url('fonts/Fixedsys500c.eot');
-  src: local('☺'), url('fonts/Fixedsys500c.woff') format('woff'), url('fonts/Fixedsys500c.ttf') format('truetype'), url('fonts/Fixedsys500c.svg') format('svg');
+  font-family: 'fixedsysttfmonospaced';
+  src: url('fonts/fixedsys500c-webfont.eot');
+  src: url('fonts/fixedsys500c-webfont.eot?#iefix') format('embedded-opentype'),
+       url('fonts/fixedsys500c-webfont.woff') format('woff'),
+       url('fonts/fixedsys500c-webfont.ttf') format('truetype'),
+       url('fonts/fixedsys500c-webfont.svg#fixedsysttfmonospaced') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 body {
   margin: 0;
-  font-family: DOS, Monaco, Menlo, Consolas, "Courier New", monospace;
+  font-family: fixedsysttfmonospaced, Monaco, Menlo, Consolas, "Courier New", monospace;
   font-size: 13px;
   line-height: 14px;
   color: #bbbbbb;
@@ -1009,7 +1012,7 @@ address {
 code,
 pre {
   padding: 0;
-  font-family: DOS, Monaco, Menlo, Consolas, "Courier New", monospace;
+  font-family: fixedsysttfmonospaced, Monaco, Menlo, Consolas, "Courier New", monospace;
   font-size: 13px;
   color: #555555;
   -webkit-border-radius: 0;
@@ -1102,7 +1105,7 @@ input,
 button,
 select,
 textarea {
-  font-family: DOS, Monaco, Menlo, Consolas, "Courier New", monospace;
+  font-family: fixedsysttfmonospaced, Monaco, Menlo, Consolas, "Courier New", monospace;
 }
 
 label {
@@ -4454,7 +4457,7 @@ input[type="submit"].btn.btn-mini {
 .navbar-search .search-query {
   padding: 4px 8px;
   margin-bottom: 0;
-  font-family: DOS, Monaco, Menlo, Consolas, "Courier New", monospace;
+  font-family: fixedsysttfmonospaced, Monaco, Menlo, Consolas, "Courier New", monospace;
   font-size: 13px;
   font-weight: normal;
   line-height: 1;
