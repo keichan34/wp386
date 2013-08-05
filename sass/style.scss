@@ -298,28 +298,36 @@ object {
 // Menus
 
 .nav {
-
-  li {
-    // background: black;
-  }
-
   .dropdown {
+
     > a {
+      &::after {
+        content: "▼";
+        margin-left: 4px;
+      }
+    }
 
-      display: inline-block;
+    ul.dropdown-menu {
+      > li { list-style-type: none; }
 
-      &.dropdown-toggle {
-        display: inline;
-        margin-left: -8px;
+      // level 3 and deeper
 
-        &:hover,
-        &:focus {
-          background-color: transparent;
+      .dropdown {
+        > a {
+          &::after {
+            content: "▶";
+            float: right;
+          }
+        }
+
+        .dropdown-menu {
+          left: 100%;
+          top: -4px;
         }
       }
     }
-  }
 
+  }
 }
 
 // Headers

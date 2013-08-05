@@ -2313,8 +2313,10 @@ table th[class*="span"],
 .navbar-inverse .nav > .active > a > [class^="icon-"],
 .navbar-inverse .nav > .active > a > [class*=" icon-"],
 .dropdown-menu > li > a:hover > [class^="icon-"],
+.dropdown-menu > li > a.hover > [class^="icon-"],
 .dropdown-menu > li > a:focus > [class^="icon-"],
 .dropdown-menu > li > a:hover > [class*=" icon-"],
+.dropdown-menu > li > a.hover > [class*=" icon-"],
 .dropdown-menu > li > a:focus > [class*=" icon-"],
 .dropdown-menu > .active > a > [class^="icon-"],
 .dropdown-menu > .active > a > [class*=" icon-"],
@@ -2974,11 +2976,13 @@ table th[class*="span"],
 }
 
 .dropdown-menu > li > a:hover,
+.dropdown-menu > li > a.hover,
 .dropdown-menu > li > a:focus,
 .dropdown-submenu:hover > a,
 .dropdown-submenu:focus > a {
   color: #ffffff;
   text-decoration: none;
+  background: #aa5500;
 }
 
 .dropdown-menu > .active > a,
@@ -3903,7 +3907,8 @@ input[type="submit"].btn.btn-mini {
 }
 
 .nav > li > a:hover,
-.nav > li > a:focus {
+.nav > li > a:focus,
+.nav > li > a.hover {
   color: #000000;
   text-decoration: none;
   background-color: #bbbbbb;
@@ -4555,7 +4560,8 @@ input[type="submit"].btn.btn-mini {
 }
 
 .navbar .nav > li > a:focus,
-.navbar .nav > li > a:hover {
+.navbar .nav > li > a:hover,
+.navbar .nav > li > a.hover {
   color: #555555;
   text-decoration: none;
   background-color: transparent;
@@ -4729,6 +4735,7 @@ input[type="submit"].btn.btn-mini {
 
 .navbar-inverse .brand:hover,
 .navbar-inverse .nav > li > a:hover,
+.navbar-inverse .nav > li > a.hover,
 .navbar-inverse .brand:focus,
 .navbar-inverse .nav > li > a:focus {
   color: #000000;
@@ -4744,7 +4751,8 @@ input[type="submit"].btn.btn-mini {
 }
 
 .navbar-inverse .nav > li > a:focus,
-.navbar-inverse .nav > li > a:hover {
+.navbar-inverse .nav > li > a:hover,
+.navbar-inverse .nav > li > a.hover {
   color: #000000;
   background: #bbbbbb;
 }

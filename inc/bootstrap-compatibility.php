@@ -35,7 +35,6 @@ class Bootstrap_Nav_Menu_Walker extends Walker_Nav_Menu {
    */
   function start_lvl( &$output, $depth = 0, $args = array() ) {
     $indent = str_repeat("\t", $depth);
-    $output .= "<a class=\"dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\"><b class=\"caret\"></b></a>";
     $output .= "\n$indent<ul class=\"dropdown-menu\">\n";
   }
 
