@@ -45,19 +45,6 @@ function wp386_setup() {
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu', 'wp386' ),
 	) );
-
-	/**
-	 * Enable support for Post Formats
-	 */
-	add_theme_support( 'post-formats', array( 'aside', 'image', 'video', 'quote', 'link' ) );
-
-	/**
-	 * Setup the WordPress core custom background feature.
-	 */
-	add_theme_support( 'custom-background', apply_filters( 'wp386_custom_background_args', array(
-		'default-color' => 'ffffff',
-		'default-image' => '',
-	) ) );
 }
 endif; // wp386_setup
 add_action( 'after_setup_theme', 'wp386_setup' );
@@ -109,11 +96,6 @@ function wp386_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'wp386_scripts' );
-
-/**
- * Implement the Custom Header feature.
- */
-//require get_template_directory() . '/inc/custom-header.php';
 
 /**
  * Custom template tags for this theme.

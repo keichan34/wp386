@@ -4,13 +4,12 @@ Theme URI: http://themes.kkob.us/wp386
 Author: Keitaroh Kobayashi
 Author URI: http://themes.kkob.us/
 Description: A theme to make your blog look like some sort of thing from the future.
-Version: 0.1-alpha
+Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags:
+Tags: two-columns, left-sidebar, black, blue, sticky-post, custom-menu
 
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
+WP386: A theme to make your blog look like some sort of thing from the future.
 
  WP386 is based on Underscores http://underscores.me/, (C) 2012-2013 Automattic, Inc.
 
@@ -108,7 +107,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
   margin: 0 0 1.5em;
 }
 
-
 /* =Asides
 ----------------------------------------------- */
 
@@ -150,6 +148,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
   margin-bottom: 1.5em;
 }
 .gallery-caption {
+  display: initial;
 }
 .site-content .gallery a img {
   border: none;
@@ -202,6 +201,7 @@ object {
   word-wrap: break-word;
 }
 .bypostauthor {
+  display: initial;
 }
 
 /* =Widgets
@@ -289,10 +289,18 @@ object {
 }
 
 .sidebar-outer {
-  margin-top: 60px;
+  margin-top: 28px;
   position: absolute;
   top: 0;
   bottom: 30px;
+
+  body.admin-bar & {
+    margin-top: 28px + 28px;
+  }
+
+  body.admin-bar.mp6 & {
+    margin-top: 28px + 32px;
+  }
 }
 
 .sidebar-container {
