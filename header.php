@@ -4,7 +4,7 @@
  *
  * Displays all of the <head> section and everything up till <div id="main">
  *
- * @package _s
+ * @package wp386
  */
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -42,9 +42,7 @@
 				<div class="sidebar-affix">
 					<div class="sidebar-outer">
 						<div class="sidebar-container">
-							<?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
-
-							<?php endif; ?>
+							<?php dynamic_sidebar( 'sidebar-1' ); ?>
 						</div>
 					</div>
 				</div>

@@ -2,7 +2,7 @@
 /**
  * The template for displaying image attachments.
  *
- * @package _s
+ * @package wp386
  */
 
 get_header();

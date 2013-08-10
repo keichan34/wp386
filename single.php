@@ -2,7 +2,7 @@
 /**
  * The Template for displaying all single posts.
  *
- * @package _s
+ * @package wp386
  */
 
 get_header(); ?>

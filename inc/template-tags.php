@@ -4,7 +4,7 @@
  *
  * Eventually, some of the functionality here could be replaced by core features
  *
- * @package _s
+ * @package wp386
  */
 
 if ( ! function_exists( 'wp386_content_nav' ) ) :

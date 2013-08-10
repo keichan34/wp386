@@ -2,7 +2,7 @@
 /**
  * The template for displaying search forms in _s
  *
- * @package _s
+ * @package wp386
  */
 ?>
 <form role="search" method="get" class="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">

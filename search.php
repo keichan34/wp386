@@ -2,7 +2,7 @@
 /**
  * The template for displaying Search Results pages.
  *
- * @package _s
+ * @package wp386
  */
 
 get_header(); ?>
