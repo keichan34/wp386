@@ -1,6 +1,6 @@
 <?php
 /**
- * _s Theme Customizer
+ * wp386 Theme Customizer
  *
  * @package wp386
  */

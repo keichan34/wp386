@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying search forms in _s
+ * The template for displaying search forms in wp386
  *
  * @package wp386
  */
