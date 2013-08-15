@@ -276,7 +276,7 @@ object {
   input.search-field {
     width: 100%;
     height: 24px;
-    @extend %border-box;
+    @extend .border-box;
   }
 }
 
@@ -313,7 +313,7 @@ object {
   overflow-x: hidden;
 
   @extend %shadowed-box;
-  @extend %border-box;
+  @extend .border-box;
 }
 
 // Menus
