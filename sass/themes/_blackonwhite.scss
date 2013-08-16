@@ -1,0 +1,46 @@
+.theme-blackonwhite {
+  background-color: #fff;
+  color: #000;
+
+  a {
+    color: #0000AA;
+    text-decoration: none;
+  }
+
+  a:hover,
+  a:focus {
+    color: #FFFFFF;
+    background: #FF5555;
+  }
+
+  article.post.sticky {
+    .page-header {
+      background-color: #5F5;
+    }
+  }
+
+  .page-header, .entry-header {
+    background: #55FFFF;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #000;
+  }
+
+  h4 {
+    color: #AA00AA;
+  }
+
+  strong, em {
+    color: #000;
+  }
+
+  .wp-caption {
+    border-color: #000;
+  }
+
+  .sidebar-container {
+    background-color: #AAA;
+    color: #000;
+  }
+}

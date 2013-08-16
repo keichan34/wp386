@@ -98,6 +98,18 @@ function wp386_scripts() {
 add_action( 'wp_enqueue_scripts', 'wp386_scripts' );
 
 /**
+ * Gets blog options.
+ */
+function wp386_blog_options() {
+	$options = get_option('wp386_options', array());
+  $options = array_merge(array(
+    'color_combination' => 'default'
+  ), $options);
+
+  return $options;
+}
+
+/**
  * Custom template tags for this theme.
  */
 require get_template_directory() . '/inc/template-tags.php';
@@ -111,6 +123,11 @@ require get_template_directory() . '/inc/extras.php';
  * Customizer additions.
  */
 require get_template_directory() . '/inc/customizer.php';
+
+/**
+ * Color theme support.
+ */
+require get_template_directory() . '/inc/theme-support.php';
 
 /**
  * Load Jetpack compatibility file.

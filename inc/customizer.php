@@ -13,7 +13,29 @@
 function wp386_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
-	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
+
+  $options = wp386_blog_options();
+
+  $wp_customize->add_setting( 'wp386_options[color_combination]',
+    array(
+      'default' => $options['color_combination'],
+      'type' => 'option',
+      'capability' => 'edit_theme_options',
+      'transport' => 'postMessage'
+    )
+  );
+
+  $wp_customize->add_control( 'theme_color_combinations', array(
+    'label'      => __('Color Combinations', 'wp386'),
+    'section'    => 'colors',
+    'settings'   => 'wp386_options[color_combination]',
+    'priority'   => 10,
+    'type'       => 'radio',
+    'choices'    => array(
+      'default' => 'Default Color Scheme',
+      'blackonwhite' => 'Dark Text / Light Background'
+    ),
+  ) );
 }
 add_action( 'customize_register', 'wp386_customize_register' );
 
