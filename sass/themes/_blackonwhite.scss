@@ -43,4 +43,22 @@
     background-color: #AAA;
     color: #000;
   }
+
+  @mixin selection {
+    background-color: #AA5500;
+    color: #FFF;
+  }
+
+  ::-webkit-selection {
+    @include selection;
+  }
+
+  ::-moz-selection {
+    @include selection;
+  }
+
+  ::selection {
+    @include selection;
+  }
+
 }
