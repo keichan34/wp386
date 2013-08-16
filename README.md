@@ -7,6 +7,23 @@ A [live demo](http://themes.kkob.us/wp386/) is available.
 
 wp386 is a WordPress theme based on the Bootstrap theme [BOOTSTRA.386](https://github.com/kristopolous/BOOTSTRA.386).
 
+How to Install
+==============
+
+wp386 uses Compass to compile SCSS.
+
+If you don't have `compass` installed:
+
+```
+$ gem install compass
+```
+
+Run the following command to generate `style.css`.
+
+```
+$ compass compile
+```
+
 Legal
 =====
 
