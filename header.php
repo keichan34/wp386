@@ -37,14 +37,18 @@
 
 	<div id="main" class="site-main container">
 
-		<div class="row">
-			<div class="span3">
-				<div class="sidebar-affix">
-					<div class="sidebar-outer">
-						<div class="sidebar-container">
-							<?php dynamic_sidebar( 'sidebar-1' ); ?>
+		<?php if (is_active_sidebar( 'sidebar-1' )): ?>
+			<div class="row">
+				<div class="span3">
+					<div class="sidebar-affix">
+						<div class="sidebar-outer">
+							<div class="sidebar-container">
+								<?php dynamic_sidebar( 'sidebar-1' ); ?>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="span9">
+				<div class="span9">
+			<?php else: ?>
+				<div class="span12">
+			<?php endif; ?>
