@@ -72,7 +72,7 @@ html {
 }
 
 a:focus {
-  outline: thin dotted #333;
+  outline: thin solid #333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -689,6 +689,30 @@ cite {
   font-style: normal;
 }
 
+i,
+cite,
+em,
+var,
+address,
+dfn {
+  font-style: normal;
+}
+
+i:before,
+cite:before,
+em:before,
+var:before,
+address:before,
+dfn:before,
+i:after,
+cite:after,
+em:after,
+var:after,
+address:after,
+dfn:after {
+  content: '/';
+}
+
 .muted {
   color: #bbbbbb;
 }
@@ -898,7 +922,7 @@ dd {
 }
 
 dt {
-  font-weight: bold;
+  font-weight: normal;
 }
 
 dd {
