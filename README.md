@@ -24,6 +24,19 @@ Run the following command to generate `style.css`.
 $ compass compile
 ```
 
+Version History
+===============
+
+## Version 1.1
+
+* "Black on White" theme (in the theme customizer)
+* Japanese and German localizations
+* Bugfix: Will not show the sidebar when no widgets are enabled
+
+## Version 1.0
+
+* Initial release
+
 Legal
 =====
 
